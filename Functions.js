@@ -1,10 +1,11 @@
-var num1;
-var num2;
-function display( num1,num2){
-    var sum = num1+num2
+
+function Display(num1,num2){
+    this.num1=num1
+    this.num2=num2
     
-    return sum
+    console.log(this.num1+this.num2)
+    
 }
 
-val=display(10,20)
-console.log(val)
+Display(10,20)
+

@@ -14,3 +14,15 @@ for(x in person){
 }
 
 console.log(person.display())
+
+//we can add to this Object Properties And Method
+
+person.dob="12-3-20"
+
+console.log(person.dob)
+
+person.displayAge=function(){
+    console.log(this.age)
+
+}
+console.log(person.displayAge())
