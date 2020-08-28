@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.js"></script>
+    <script src="for form.js"></script>
+</head>
+<body>
+  <div style="background-image: url('img_girl.jpg');">
+  <form  id="signup-form" action="loginaction" method="GET">
+      <div class="field">
+      <label >First Name</label>
+      <input type="text" name="fname" class="field" placeholder="first name"><br>
+      <label >last name</label>
+      <input type="text" name="sname" class="field" placeholder="last name"><br>
+      <label>Age</label>
+      <input type ="number" name="for-age"><br>
+      <label>Email</label>
+      <input type="email"  name="forMail" class="field"><br>
+      <label>Gender</label><br>
+      <input type="radio" name="forGender">
+      <label>male</label><br>
+      <input type = "radio" name="forGender">
+      <label>Female</label><br>
+      
+      
+      <select name="forQual">
+          <option>Choose..</option>
+          <option>+2</option>
+          <option>UG</option>
+      </select>
+      <br>
+      <label>Skills</label><br>
+      <input type = "checkbox" name="forSkill"> 
+      <label>html</label><br>
+      <input type = "checkbox" name="forSkill">
+      <label>css</label><br>
+      <input type = "checkbox" name="forSkill">
+      <label>js</label><br>
+    </div>
+
+     
+     
+      <input type="submit" value="submit">
+  </form>
+</div>
+    
+</body>
+</html>
