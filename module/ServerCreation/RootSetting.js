@@ -1,6 +1,8 @@
 var http = require('http')
 var fs = require('fs')
 var url = require('url')
+
+
 http.createServer(function(req,res){
 
     var q = url.parse(req.url,true)
@@ -9,6 +11,8 @@ http.createServer(function(req,res){
 
     fs.readFile('hi.html',function(err,data){
     res.write(data)
+    
+    
     res.end()
     })
 
@@ -23,6 +27,7 @@ http.createServer(function(req,res){
     console.log(q.query)
     res.writeHead(200,{'Content-type':'text/html'})
     res.write('<h1>'+"Hi"+ " "+q.query.fname+" "+"Welcome to Server"+'</h1>')
+    
     res.end()
 }
 else{
